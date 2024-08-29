@@ -3,10 +3,10 @@ import { SideBarContainer, Icon, CloseIcon,
 
 } from "./SideBarElements"
 import PropTypes from "prop-types"
-function SideBar({isOpen, toggle}) {
+function SideBar({isopen, toggle}) {
   return (
 
-    <SideBarContainer isOpen={isOpen} onClick={toggle}>
+    <SideBarContainer isOpen={isopen} onClick={toggle}>
         <Icon onClick={toggle}>
             <CloseIcon />
         </Icon>
@@ -26,7 +26,7 @@ function SideBar({isOpen, toggle}) {
   )
 }
 SideBar.propTypes = {
-    isOpen: PropTypes.bool,
+    isopen: PropTypes.bool,
     toggle: PropTypes.func
 }
 export default  SideBar

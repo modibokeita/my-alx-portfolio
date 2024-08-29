@@ -1,8 +1,8 @@
 import {LandingContenair, LandindBg, VideoBg,
-    LandingContent, LandingH1, LandingP,LandingBtnWrapper, Button, ArrowForward, ArrowRight
+    LandingContent, LandingH1, LandingP,LandingBtnWrapper, ArrowForward, ArrowRight
 } from "./LandingElement"
 import video from '../../videos/video.mp4'
-
+import {Button} from "../ButtonElemet"
 import { useState } from "react"
 function LandingPage() {
 
@@ -20,7 +20,13 @@ function LandingPage() {
             <LandingH1> Hello Shop</LandingH1>
             <LandingP> Sign Up for New Account here</LandingP>
             <LandingBtnWrapper>
-                <Button to="signup" onMouseEnter={onHover}>Sign Up {hover ? <ArrowForward/> : <ArrowRight/>}</Button>
+                <Button to="signup" onMouseEnter={onHover}
+                 onMouseLeave={onHover}
+                 primary= "true"
+                 dark= "true"
+                 >
+                    Sign Up {hover ? <ArrowForward/> : <ArrowRight/>}
+                </Button>
             </LandingBtnWrapper>
         </LandingContent>
     </LandingContenair>

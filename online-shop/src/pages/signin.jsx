@@ -1,12 +1,12 @@
-import Navbar from "../components/NavBar"
+
+import Signin from "../components/Signin"
 
 
 const SigninPage = () => {
   return (
-    <div>
-        <Navbar />
-        <h1>Sign in page</h1>
-    </div>
+    <>
+        <Signin />
+    </>
   )
 }
 

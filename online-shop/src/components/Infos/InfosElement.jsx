@@ -7,6 +7,7 @@ export const InfosContainer = styled.div`
     @media screen  and (min-width: 768px){
         padding: 100px 0px;
     }
+
 `
 export const InfosWrapper = styled.div`
     display: grid;
@@ -70,7 +71,7 @@ export const Subtitle = styled.p`
     margin-bottom: 35px;
     font-size: 18px;
     line-height: 24px;
-    color: ${(darkText) => (darkText ? "#010606" : "#fff")};
+    color: ${(darkText) => (darkText ? "#fff" : "#000")};
 `
 export const BtnWraper = styled.div`
     display: flex;

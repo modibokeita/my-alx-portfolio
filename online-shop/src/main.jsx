@@ -5,11 +5,15 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import * as ReactDOM from "react-dom/client";
-
+import SigninPage from './pages/signin.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+  },
+  {
+    path: "/signin",
+    element: <SigninPage />,
   },
 ]);
 

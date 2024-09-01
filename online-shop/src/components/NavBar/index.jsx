@@ -13,13 +13,13 @@ function Navbar({toggle}) {
             </MobileIcon>
             <NavMenu>
                 <NavItems>
-                    <NavLinks to="about">Home</NavLinks>
+                    <NavLinks to="/">Home</NavLinks>
                 </NavItems>
                 <NavItems>
                     <NavLinks to="about">About</NavLinks>
                 </NavItems>
                 <NavItems>
-                    <NavLinks to="about">Contact</NavLinks>
+                    <NavLinks to="contact">Contact</NavLinks>
                 </NavItems>
                 <NavItems>
                     <NavLinks to="sinup">Sign Up</NavLinks>

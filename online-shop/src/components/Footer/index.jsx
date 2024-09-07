@@ -1,10 +1,11 @@
 import { FaFacebook, FaInstagram, FaTwitter, FaWhatsapp, FaYoutube } from "react-icons/fa"
 import { FooterContenair, FooterLinksWrapper,
     FooterWrapper, FooterLinksContainer,
-    FooterLink, FooterLinksItem, FooterLinksTitle,
+ FooterLinksItem, FooterLinksTitle,
     SocialIconLink, SocialIcons, SocialLogo, SocialMedia,
     SocialMediaWrapper, WebsiteRights
  } from "./FooterElements"
+import { Button } from "../ButtonElemet"
 
 const Footer = () => {
   return (
@@ -13,36 +14,15 @@ const Footer = () => {
             <FooterLinksContainer>
                 <FooterLinksWrapper>
                     <FooterLinksItem>
-                        <FooterLinksTitle>About Us</FooterLinksTitle>
-                        <FooterLink to="/signin">contact</FooterLink>
-                        <FooterLink to="/signin">outd Us</FooterLink>
-                        <FooterLink to="/signin">About Us</FooterLink>
+                        <FooterLinksTitle>Ready to Refresh Your Wardrobe?</FooterLinksTitle>
+                        <Button to="/signin">Shop Now</Button>
                     </FooterLinksItem>
-                    <FooterLinksItem>
-                        <FooterLinksTitle>Contact Us</FooterLinksTitle>
-                        <FooterLink to="/signin">contact</FooterLink>
-                        <FooterLink to="/signin">outd Us</FooterLink>
-                        <FooterLink to="/signin">About Us</FooterLink>
-                    </FooterLinksItem>
-                </FooterLinksWrapper>
-                <FooterLinksWrapper>
-                    <FooterLinksItem>
-                        <FooterLinksTitle>About Us</FooterLinksTitle>
-                        <FooterLink to="/signin">contact</FooterLink>
-                        <FooterLink to="/signin">outd Us</FooterLink>
-                        <FooterLink to="/signin">About Us</FooterLink>
-                    </FooterLinksItem>
-                    <FooterLinksItem>
-                        <FooterLinksTitle>Contact Us</FooterLinksTitle>
-                        <FooterLink to="/signin">contact</FooterLink>
-                        <FooterLink to="/signin">outd Us</FooterLink>
-                        <FooterLink to="/signin">About Us</FooterLink>
-                    </FooterLinksItem>
+
                 </FooterLinksWrapper>
             </FooterLinksContainer>
             <SocialMedia>
                 <SocialMediaWrapper>
-                    <SocialLogo to="/">Keita</SocialLogo>
+                    <SocialLogo to="/">Follow us on Social Media</SocialLogo>
                     <WebsiteRights>© Keita {new  Date().getFullYear()} all rights reserved</WebsiteRights>
                     <SocialIcons>
                     <SocialIconLink href="/" target="_blank" aria-label="facebook">

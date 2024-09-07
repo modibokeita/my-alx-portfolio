@@ -1,15 +1,38 @@
-import { Button } from "../ButtonElemet"
+//import { Button } from "../ButtonElemet"
 import PropTypes from "prop-types"
 import {InfosContainer, InfosWrapper, InfosRow
     , Column1, TextWrapper, TopLine, Heading, Subtitle, BtnWraper,
     ImgWraper,
     Img, Column2
 } from "./InfosElement"
+import styled from "styled-components"
+import { Link as LinkR } from "react-router-dom";
+export const SignupBtnLink = styled(LinkR)`
+    border-radius: 50px;
+    background: #ff4081;
+    white-space: nowrap;
+    padding: 10px 22px;
+    color: #010606;
+    font-size: 16px;
+    border: none;
+    outline:none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+
+    &:hover{
+        transition: all 0.2s ease-in-out;
+        background: #fff;
+        color: #010606;
+    }
+
+`
 function Infos({id, lightBg, imgStart,
     topLine, lightText, headLine,
     darkText, description, buttonLabel, img, alt }) {
   return (
     <>
+
         <InfosContainer lightBg={lightBg} id={id}>
             <InfosWrapper>
                 <InfosRow imgStart={imgStart}>
@@ -19,7 +42,7 @@ function Infos({id, lightBg, imgStart,
                             <Heading lightText={lightText}>{headLine}</Heading>
                             <Subtitle darkText={darkText}>{description}</Subtitle>
                             <BtnWraper>
-                                <Button to="home">{buttonLabel}</Button>
+                                <SignupBtnLink to="/signup">{buttonLabel}</SignupBtnLink>
                             </BtnWraper>
                         </TextWrapper>
                     </Column1>

@@ -7,22 +7,22 @@ function Navbar({toggle}) {
   return (
     <Nav>
         <NavbarContainer>
-            <NavLogo to="/">Keita</NavLogo>
+            <NavLogo to="/">Keita-Fashion</NavLogo>
             <MobileIcon onClick={toggle}>
                 <FaBars />
             </MobileIcon>
             <NavMenu>
                 <NavItems>
-                    <NavLinks to="/">Home</NavLinks>
+                    <NavLinks to="features">Features</NavLinks>
                 </NavItems>
                 <NavItems>
-                    <NavLinks to="about">About</NavLinks>
+                    <NavLinks to="about">Products</NavLinks>
                 </NavItems>
                 <NavItems>
-                    <NavLinks to="contact">Contact</NavLinks>
+                    <NavLinks to="contact">Shop Now</NavLinks>
                 </NavItems>
                 <NavItems>
-                    <NavLinks to="sinup">Sign Up</NavLinks>
+                    <NavLinks to="testimonials">Testimonials</NavLinks>
                 </NavItems>
             </NavMenu>
             <NavBtn>

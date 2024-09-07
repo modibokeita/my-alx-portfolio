@@ -7,7 +7,7 @@ const Signin = () => {
   return (
     <Contenair>
         <FormWrap>
-            <Icon to="/">Keita</Icon>
+            <Icon to="/">Home</Icon>
             <FormContent>
                 <Form action="#">
                     <FormH1> Sign In</FormH1>

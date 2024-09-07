@@ -10,7 +10,7 @@ export const LandingContenair = styled.div`
     height: 800px;
     position: relative;
     z-index:1;
-    
+
 
 `
 export const LandindBg = styled.div`
@@ -26,7 +26,7 @@ export const LandindBg = styled.div`
 
 export const VideoBg = styled.video`
 
-    width: 100%;
+width: 100%;
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;

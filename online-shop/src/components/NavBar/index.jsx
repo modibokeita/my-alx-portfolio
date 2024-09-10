@@ -7,7 +7,7 @@ function Navbar({toggle}) {
   return (
     <Nav>
         <NavbarContainer>
-            <NavLogo to="/">Keita-Fashion</NavLogo>
+            <NavLogo to="/">StyleSphere-Fashion</NavLogo>
             <MobileIcon onClick={toggle}>
                 <FaBars />
             </MobileIcon>

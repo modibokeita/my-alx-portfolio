@@ -5,7 +5,7 @@ const TestimonialsContainer = styled.section`
   color: #fff;
   text-align: center;
   padding: 50px;
-  background-color: #2f312e;
+  background-color: #333;
 
 `;
 

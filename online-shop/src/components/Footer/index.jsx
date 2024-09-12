@@ -5,7 +5,6 @@ import { FooterContenair, FooterLinksWrapper,
     SocialIconLink, SocialIcons, SocialLogo, SocialMedia,
     SocialMediaWrapper, WebsiteRights
  } from "./FooterElements"
-import { Button } from "../ButtonElemet"
 
 const Footer = () => {
   return (
@@ -15,7 +14,6 @@ const Footer = () => {
                 <FooterLinksWrapper>
                     <FooterLinksItem>
                         <FooterLinksTitle>Ready to Refresh Your Wardrobe?</FooterLinksTitle>
-                        <Button to="/signin">Shop Now</Button>
                     </FooterLinksItem>
 
                 </FooterLinksWrapper>

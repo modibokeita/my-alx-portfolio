@@ -42,7 +42,7 @@ function Infos({id, lightBg, imgStart,
                             <Heading lightText={lightText}>{headLine}</Heading>
                             <Subtitle darkText={darkText}>{description}</Subtitle>
                             <BtnWraper>
-                                <SignupBtnLink to="/signup">{buttonLabel}</SignupBtnLink>
+                                <SignupBtnLink to="/signin">{buttonLabel}</SignupBtnLink>
                             </BtnWraper>
                         </TextWrapper>
                     </Column1>

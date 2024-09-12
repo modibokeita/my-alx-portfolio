@@ -1,9 +1,11 @@
-import {FaBars} from 'react-icons/fa'
+import {FaBars, FaShoppingCart} from 'react-icons/fa'
 import { Nav, NavbarContainer, NavLogo, NavMenu,
      NavItems, NavLinks, MobileIcon, NavBtn, NavBtnLink
     } from "./NavbarElements"
 import PropTypes from "prop-types"
+
 function Navbar({toggle}) {
+
   return (
     <Nav>
         <NavbarContainer>
@@ -28,13 +30,17 @@ function Navbar({toggle}) {
             <NavBtn>
                 <NavBtnLink to="/signin">Sign In</NavBtnLink>
             </NavBtn>
+            <NavBtn>
+                <FaShoppingCart size={30} />:  ({0})
+            </NavBtn>
         </NavbarContainer>
     </Nav>
   )
 }
 
 Navbar.propTypes =  {
-    toggle: PropTypes.func
+    toggle: PropTypes.func,
+
 }
 export default Navbar
 

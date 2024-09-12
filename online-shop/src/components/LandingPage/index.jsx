@@ -24,7 +24,6 @@ export const SignupBtnLink = styled(LinkR)`
         background: #fff;
         color: #010606;
     }
-
 `
 function LandingPage() {
 

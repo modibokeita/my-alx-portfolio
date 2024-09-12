@@ -7,7 +7,7 @@ import {
 import * as ReactDOM from "react-dom/client";
 import SigninPage from './pages/signin.jsx';
 import SignupPage from './pages/signup.jsx';
-
+import ProductsListPage from './pages/productsList.jsx';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -20,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "/signup",
     element: <SignupPage />,
+  },
+  {
+    path:"/productsList",
+    element: <ProductsListPage />,
   }
 ]);
 

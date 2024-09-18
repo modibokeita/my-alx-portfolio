@@ -1,1 +1,3 @@
-I have to document that readme later.
+## StyleSphere-Fashion E-Commerce Platform
+
+# Table of Contents

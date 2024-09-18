@@ -93,3 +93,4 @@ ________________________________________________________________
     ```bash
     npm start
     ```
+![App Screenshot](assets/screenshot.png)

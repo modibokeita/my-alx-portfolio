@@ -2,12 +2,28 @@ from rest_framework import serializers
 from .models import Product, Category, Order, OrderItem, Cart, CartItem, Review
 from django.contrib.auth.models import User
 from rest_framework.authtoken.models import Token
+
+"""
+    Serializetion of different models
+"""
+
+
 class ProductSerializer(serializers.ModelSerializer):
+    """
+    Serializetion of Product Model
+
+    """
+
     class Meta:
         model = Product
         fields = '__all__'
 
 class CategorySerializer(serializers.ModelSerializer):
+
+    """
+    Serializetion of Category Model
+
+    """
     products = ProductSerializer(many=True, read_only=True)
 
     class Meta:
@@ -15,11 +31,19 @@ class CategorySerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class OrderItemSerializer(serializers.ModelSerializer):
+    """
+    Serializetion of Order Model
+
+    """
     class Meta:
         model = OrderItem
         fields = '__all__'
 
 class OrderSerializer(serializers.ModelSerializer):
+    """
+    Serializetion of Items Model
+
+    """
     items = OrderItemSerializer(many=True, read_only=True)
 
     class Meta:
@@ -27,11 +51,19 @@ class OrderSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class CartItemSerializer(serializers.ModelSerializer):
+    """
+    Serializetion of Cart Items Model
+
+    """
     class Meta:
         model = CartItem
         fields = '__all__'
 
 class CartSerializer(serializers.ModelSerializer):
+    """
+    Serializetion of Cart Model
+
+    """
     items = CartItemSerializer(many=True, read_only=True)
 
     class Meta:
@@ -39,15 +71,27 @@ class CartSerializer(serializers.ModelSerializer):
         fields = '__all__'
 
 class ReviewSerializer(serializers.ModelSerializer):
+    """
+    Serializetion of Review Model
+
+    """
     class Meta:
         model = Review
         fields = '__all__'
 class UserSerializer(serializers.ModelSerializer):
+    """
+    Serializetion of User Model
+
+    """
     class Meta:
         model = User
         fields = ['id', 'username', 'email']
 
 class RegisterSerializer(serializers.ModelSerializer):
+    """
+    Serializetion of Sign up Model
+
+    """
     class Meta:
         model = User
         fields = ['username', 'email', 'password']
@@ -63,5 +107,9 @@ class RegisterSerializer(serializers.ModelSerializer):
         return user
 
 class LoginSerializer(serializers.Serializer):
+    """
+    Serializetion of Login Model
+
+    """
     username = serializers.CharField()
     password = serializers.CharField()
